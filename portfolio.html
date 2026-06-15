@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Specialist Portfolio | Organic Growth & Strategy</title>
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#1E3A8A', // Deep Blue
+                        'secondary': '#FBBF24', // Amber/Gold for contrast
+                        'background': '#F9FAFB', // Light Gray background
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for clean UI enhancements */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB;
+            scroll-behavior: smooth;
+        }
+        .section-heading {
+            border-bottom: 3px solid #FBBF24;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card-shadow:hover {
+            transform: translateY(-5px);
+        }
+        /* Style for the button hover effect */
+        .btn-primary:hover {
+            background-color: #1D4ED8;
+            box-shadow: 0 4px 10px rgba(30, 58, 138, 0.4);
+        }
+    </style>
+    <!-- Load Lucide Icons for vector-based, clean icons -->
+    <script type="module">
+        import { createIcons, Search, Code, TrendingUp, Mail } from 'https://cdn.jsdelivr.net/npm/lucide@latest/dist/esm/lucide.js';
+        createIcons({ icons: { Search, Code, TrendingUp, Mail } });
+    </script>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#hero" class="text-2xl font-bold text-primary">
+                    Suyog Pangeni <span class="text-secondary text-sm font-light hidden sm:inline">| SEO Specialist</span>
+                </a>
+                <div class="flex space-x-4">
+                    <a href="#services" class="text-gray-600 hover:text-primary transition duration-150">Services</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-primary transition duration-150">Case Studies</a>
+                    <a href="#blog" class="text-gray-600 hover:text-primary transition duration-150">Blog</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition duration-150">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION -->
+    <header id="hero" class="bg-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4">
+                Organic Growth is the Only Way.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                I'm a data-driven SEO Specialist focused on sustainable organic traffic growth, technical site health, and content strategy that converts.
+            </p>
+            <div class="space-x-4">
+                <a href="#portfolio" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary btn-primary shadow-lg transition duration-300">
+                    View Success Stories
+                </a>
+                <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 border border-primary text-base font-medium rounded-lg text-primary bg-white hover:bg-primary/10 transition duration-300">
+                    Get a Free Audit
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-16 md:py-20">
+        <!-- 2. SERVICES SECTION -->
+        <section id="services" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <h2 class="text-3xl font-bold mb-12 text-center section-heading">Core SEO Specialties</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Card 1: Technical SEO -->
+                <div class="bg-white p-8 rounded-xl card-shadow text-center">
+                    <i data-lucide="code" class="w-10 h-10 text-primary mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Technical SEO</h3>
+                    <p class="text-gray-600">Site speed optimization, Core Web Vitals, crawl budget management, and schema markup implementation to ensure search engine efficiency.</p>
+                </div>
+
+                <!-- Service Card 2: Content Strategy -->
+                <div class="bg-white p-8 rounded-xl card-shadow text-center">
+                    <i data-lucide="search" class="w-10 h-10 text-primary mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Content Strategy</h3>
+                    <p class="text-gray-600">In-depth keyword research, topic clustering, and creating conversion-focused content strategies that dominate the SERPs for high-value terms.</p>
+                </div>
+
+                <!-- Service Card 3: Link Building & Authority -->
+                <div class="bg-white p-8 rounded-xl card-shadow text-center">
+                    <i data-lucide="trending-up" class="w-10 h-10 text-primary mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Link Building & Authority</h3>
+                    <p class="text-gray-600">Ethical, white-hat link acquisition strategies to increase Domain Authority (DA/DR) and build trust with search engines.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PORTFOLIO / CASE STUDIES SECTION (Data Focused) -->
+        <section id="portfolio" class="bg-background py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold mb-12 text-center section-heading">Proven Case Studies</h2>
+
+                <!-- Case Study 1: SaaS Client -->
+                <div class="bg-white p-6 md:p-10 rounded-xl card-shadow mb-12">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Case Study 1: SaaS Client - Tripling Organic Traffic</h3>
+                    <p class="text-gray-600 mb-6">A B2B SaaS platform struggled with visibility for their product features. We executed a full technical audit and implemented a feature-to-solution content mapping strategy.</p>
+                    
+                    <!-- Metrics Grid -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                        <div class="p-4 bg-primary/10 rounded-lg">
+                            <p class="text-3xl font-extrabold text-primary">+200%</p>
+                            <p class="text-sm font-medium text-gray-600">Organic Traffic (YOY)</p>
+                        </div>
+                        <div class="p-4 bg-primary/10 rounded-lg">
+                            <p class="text-3xl font-extrabold text-primary">4.8s</p>
+                            <p class="text-sm font-medium text-gray-600">Page Load Time Reduced To</p>
+                        </div>
+                        <div class="p-4 bg-primary/10 rounded-lg">
+                            <p class="text-3xl font-extrabold text-primary">#1</p>
+                            <p class="text-sm font-medium text-gray-600">Ranking for 5 Core Keywords</p>
+                        </div>
+                        <div class="p-4 bg-primary/10 rounded-lg">
+                            <p class="text-3xl font-extrabold text-primary">15%</p>
+                            <p class="text-sm font-medium text-gray-600">Increase in Marketing Qualified Leads (MQLs)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2: E-commerce Client -->
+                <div class="bg-white p-6 md:p-10 rounded-xl card-shadow">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Case Study 2: E-commerce Retailer - Conversion Focused SEO</h3>
+                    <p class="text-gray-600 mb-6">A medium-sized e-commerce site had high traffic but low sales. We focused on conversion rate optimization (CRO) via on-page SEO and structured data optimization.</p>
+                    
+                    <!-- Metrics Grid -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                        <div class="p-4 bg-primary/10 rounded-lg">
+                            <p class="text-3xl font-extrabold text-primary">+45%</p>
+                            <p class="text-sm font-medium text-gray-600">Organic Revenue</p>
+                        </div>
+                        <div class="p-4 bg-primary/10 rounded-lg">
+                            <p class="text-3xl font-extrabold text-primary">85%</p>
+                            <p class="text-sm font-medium text-gray-600">Desktop Lighthouse Score</p>
+                        </div>
+                        <div class="p-4 bg-primary/10 rounded-lg">
+                            <p class="text-3xl font-extrabold text-primary">5x</p>
+                            <p class="text-sm font-medium text-gray-600">More Featured Snippets Secured</p>
+                        </div>
+                        <div class="p-4 bg-primary/10 rounded-lg">
+                            <p class="text-3xl font-extrabold text-primary">2.1%</p>
+                            <p class="text-sm font-medium text-gray-600">Conversion Rate Increase</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-secondary hover:bg-yellow-600 transition duration-300 shadow-lg">
+                        Ready for Your Own Success Story?
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ABOUT & TESTIMONIALS SECTION -->
+        <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <h2 class="text-3xl font-bold mb-12 text-center section-heading">Why Partner With Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- About Block -->
+                <div class="space-y-4">
+                    <p class="text-lg text-gray-700 font-semibold">My Philosophy: Building Authority, Not Shortcuts.</p>
+                    <p class="text-gray-600">I approach SEO as a long-term investment in your business, focusing on sustainable, ethical, and scalable strategies. My background in content strategy and technical execution allows me to bridge the gap between development teams and marketing goals, ensuring every optimization contributes directly to your bottom line. I prioritize clear, jargon-free communication and measurable ROI.</p>
+                    <div class="pt-4">
+                         <p class="text-sm font-medium text-primary">Certifications & Tools:</p>
+                         <p class="text-sm text-gray-500">Google Analytics 4, SEMrush, Ahrefs, Screaming Frog, Google Search Console Expert.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block -->
+                <div class="bg-white p-8 rounded-xl card-shadow border-l-4 border-secondary">
+                    <p class="italic text-gray-700 mb-4 text-xl leading-relaxed">
+                        "The technical audit was incredibly detailed and immediately actionable. Our organic traffic saw a 40% jump in the first quarter after implementation. Highly professional and results-focused."
+                    </p>
+                    <p class="font-bold text-gray-800">— Jane Doe, Marketing Director at TechCorp</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. BLOG SECTION -->
+        <section id="blog" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <h2 class="text-3xl font-bold mb-12 text-center section-heading">Latest SEO Insights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Blog Card 1 -->
+                <article class="bg-white p-6 rounded-xl card-shadow">
+                    <h4 class="text-xl font-semibold text-primary mb-3">Mastering GA4: SEO Reporting for Growth</h4>
+                    <p class="text-sm text-gray-500 mb-4">October 20, 2025 | 5 min read</p>
+                    <p class="text-gray-600 mb-4">A deep dive into setting up key events and conversions in Google Analytics 4 to accurately measure organic search performance and ROI.</p>
+                    <a href="#" class="text-secondary hover:text-yellow-600 font-medium text-sm flex items-center">
+                        Read Article 
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </article>
+
+                <!-- Blog Card 2 -->
+                <article class="bg-white p-6 rounded-xl card-shadow">
+                    <h4 class="text-xl font-semibold text-primary mb-3">The Impact of AI on Search Engine Result Pages (SERPs)</h4>
+                    <p class="text-sm text-gray-500 mb-4">October 1, 2025 | 8 min read</p>
+                    <p class="text-gray-600 mb-4">Analyzing how Google's AI capabilities, including SGE, are reshaping content creation and optimization strategies for modern SEO specialists.</p>
+                    <a href="#" class="text-secondary hover:text-yellow-600 font-medium text-sm flex items-center">
+                        Read Article 
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </article>
+
+                <!-- Blog Card 3 -->
+                <article class="bg-white p-6 rounded-xl card-shadow">
+                    <h4 class="text-xl font-semibold text-primary mb-3">Core Web Vitals 2026: Preparing for the Next Update</h4>
+                    <p class="text-sm text-gray-500 mb-4">September 15, 2025 | 6 min read</p>
+                    <p class="text-gray-600 mb-4">A checklist of technical optimizations developers and SEOs must implement now to stay ahead of the curve and ensure top-tier page experience scores.</p>
+                    <a href="#" class="text-secondary hover:text-yellow-600 font-medium text-sm flex items-center">
+                        Read Article 
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- 6. CONTACT SECTION -->
+        <section id="contact" class="bg-primary text-white py-16">
+            <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-4">Let's Rank Higher Together</h2>
+                <p class="text-lg mb-8 opacity-90">Ready to transform your organic performance? Reach out below or send me a message directly.</p>
+                
+                <div class="flex flex-col space-y-4 items-center">
+                    <div class="flex items-center space-x-3 text-lg font-medium">
+                        <i data-lucide="mail" class="w-6 h-6 text-secondary"></i>
+                        <a href="mailto:youremail@example.com" class="hover:underline text-white">info@suyogpangeni.com.np</a>
+                    </div>
+                    <a href="#" class="inline-flex items-center justify-center px-8 py-3 border border-white text-base font-medium rounded-lg text-white bg-transparent hover:bg-white hover:text-primary transition duration-300">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm opacity-70">
+            &copy; 2025 Suyog Pangeni SEO Portfolio. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
